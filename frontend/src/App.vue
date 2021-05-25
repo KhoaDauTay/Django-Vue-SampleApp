@@ -1,15 +1,28 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
+  <header>
+      <h1>{{ msg }}</h1>
+  </header>
   <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <Events></Events>
+  <DynamicStyle></DynamicStyle>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
-
+import Events from "@/components/Events";
+import DynamicStyle from "@/components/DynamicStyle";
 export default {
   name: 'App',
+  data() {
+    return {
+      msg: 'Vue JS APP'
+    }
+  },
   components: {
-    HelloWorld
+    HelloWorld,
+    Events,
+    DynamicStyle
   }
 }
 </script>
