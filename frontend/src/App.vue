@@ -6,12 +6,14 @@
   <HelloWorld msg="Welcome to Your Vue.js App"/>
   <Events></Events>
   <DynamicStyle></DynamicStyle>
+  <VueCourseGoal></VueCourseGoal>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
 import Events from "@/components/Events";
 import DynamicStyle from "@/components/DynamicStyle";
+import VueCourseGoal from "./components/VueCourseGoal";
 export default {
   name: 'App',
   data() {
@@ -22,7 +24,8 @@ export default {
   components: {
     HelloWorld,
     Events,
-    DynamicStyle
+    DynamicStyle,
+    VueCourseGoal
   }
 }
 </script>
