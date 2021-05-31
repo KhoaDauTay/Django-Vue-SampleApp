@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-*yb=(_q=aonl9z^dq+#et^14@-h(*95oymm=*u)selq^s))-v#
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -40,7 +40,6 @@ INSTALLED_APPS = [
     'webpack_loader',
     'core.apps.CoreConfig',
 ]
-
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',

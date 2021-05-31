@@ -7,6 +7,7 @@
   <Events></Events>
   <DynamicStyle></DynamicStyle>
   <VueCourseGoal></VueCourseGoal>
+  <MonsterSlay></MonsterSlay>
 </template>
 
 <script>
@@ -14,6 +15,7 @@ import HelloWorld from './components/HelloWorld.vue'
 import Events from "@/components/Events";
 import DynamicStyle from "@/components/DynamicStyle";
 import VueCourseGoal from "./components/VueCourseGoal";
+import MonsterSlay from "@/components/MonsterSlay";
 export default {
   name: 'App',
   data() {
@@ -25,7 +27,8 @@ export default {
     HelloWorld,
     Events,
     DynamicStyle,
-    VueCourseGoal
+    VueCourseGoal,
+    MonsterSlay
   }
 }
 </script>

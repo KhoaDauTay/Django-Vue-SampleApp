@@ -8,8 +8,11 @@
     <button @click="addGoals">Add Goal</button>
     <p v-if="goals.length === 0">No goals have been added yet - please start adding some!</p>
     <ul v-else>
-      <li v-for="goal in goals" :key="goal">{{ goal }}</li>
+      <li v-for="(goal, index) in goals" :key="goal" @click="removeGoal(index)">{{ goal }} - {{index}}</li>
     </ul>
+<!--    <ul>-->
+<!--      <li v-for="(value, key) in {name: 'Khoa', age: 30}" :key="key">{{ key }} - {{value}}</li>-->
+<!--    </ul>-->
   </section>
 </template>
 
@@ -26,7 +29,10 @@ export default {
   methods: {
     addGoals() {
       this.goals.push(this.enterGoals);
-    }
+    },
+    removeGoal(index) {
+    this.goals.splice(index, 1);
+  }
   }
 }
 </script>
